@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SFProDisplay-Semibold.ttf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KGk-i7-Jjw" customClass="tblSearchListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultGroupIconNew" translatesAutoresizingMaskIntoConstraints="NO" id="jhj-Lu-TWJ">
+                        <rect key="frame" x="16" y="11.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="JQe-7u-Lf0"/>
+                            <constraint firstAttribute="width" constant="40" id="Wrk-eU-Iff"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGV-Me-YI7">
+                        <rect key="frame" x="254" y="11.5" width="50" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Rit-e8-3So"/>
+                            <constraint firstAttribute="height" constant="40" id="i60-Hl-HWR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                        <state key="normal" title="Join"/>
+                        <connections>
+                            <action selector="btnJoin:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="R2K-kN-gTP"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Channel 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzB-vz-8pZ">
+                        <rect key="frame" x="64" y="8" width="78.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="DrO-pd-D0d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hni-Mv-Ca5">
+                        <rect key="frame" x="64" y="31" width="182" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="vaM-kB-ijq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tfy-4q-KMw">
+                        <rect key="frame" x="16" y="62" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.88627450980392153" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="e1s-R9-LYt"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock" translatesAutoresizingMaskIntoConstraints="NO" id="4d4-Yg-Im8">
+                        <rect key="frame" x="148.5" y="8.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Ij5-3j-oyn"/>
+                            <constraint firstAttribute="width" constant="20" id="ZWC-UG-hbR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lzB-vz-8pZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="0MJ-YV-vDL"/>
+                    <constraint firstItem="CGV-Me-YI7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0nE-AW-BsD"/>
+                    <constraint firstItem="jhj-Lu-TWJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1yn-KI-Qdz"/>
+                    <constraint firstItem="tfy-4q-KMw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7dT-G5-LsL"/>
+                    <constraint firstItem="lzB-vz-8pZ" firstAttribute="leading" secondItem="jhj-Lu-TWJ" secondAttribute="trailing" constant="8" symbolic="YES" id="9sm-CM-ybk"/>
+                    <constraint firstItem="4d4-Yg-Im8" firstAttribute="leading" secondItem="lzB-vz-8pZ" secondAttribute="trailing" constant="6" id="IT6-c2-uQo"/>
+                    <constraint firstAttribute="trailing" secondItem="CGV-Me-YI7" secondAttribute="trailing" constant="16" id="Tai-aU-Bsu"/>
+                    <constraint firstItem="hni-Mv-Ca5" firstAttribute="leading" secondItem="jhj-Lu-TWJ" secondAttribute="trailing" constant="8" symbolic="YES" id="Va0-dt-UeV"/>
+                    <constraint firstItem="jhj-Lu-TWJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gYB-QW-aYz"/>
+                    <constraint firstAttribute="bottom" secondItem="tfy-4q-KMw" secondAttribute="bottom" id="gdQ-dH-yhM"/>
+                    <constraint firstItem="hni-Mv-Ca5" firstAttribute="top" secondItem="lzB-vz-8pZ" secondAttribute="bottom" constant="2" id="hBm-xt-R1F"/>
+                    <constraint firstAttribute="trailing" secondItem="tfy-4q-KMw" secondAttribute="trailing" id="i0C-mF-0jR"/>
+                    <constraint firstItem="4d4-Yg-Im8" firstAttribute="centerY" secondItem="lzB-vz-8pZ" secondAttribute="centerY" id="mSR-mX-A16"/>
+                    <constraint firstItem="tfy-4q-KMw" firstAttribute="top" secondItem="jhj-Lu-TWJ" secondAttribute="bottom" constant="10.5" id="nRv-Bx-NIo"/>
+                    <constraint firstItem="CGV-Me-YI7" firstAttribute="leading" secondItem="hni-Mv-Ca5" secondAttribute="trailing" constant="8" symbolic="YES" id="wys-Lw-Lg0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btnJoin" destination="CGV-Me-YI7" id="x4g-ha-gdL"/>
+                <outlet property="imgGroupIcon" destination="4d4-Yg-Im8" id="cme-xz-ilx"/>
+                <outlet property="lblChannelName" destination="lzB-vz-8pZ" id="m3d-mb-rdp"/>
+                <outlet property="lblSubTitle" destination="hni-Mv-Ca5" id="r4H-39-yqA"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="76.004464285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DefaultGroupIconNew" width="38" height="38"/>
+        <image name="Lock" width="11" height="14"/>
+    </resources>
+</document>

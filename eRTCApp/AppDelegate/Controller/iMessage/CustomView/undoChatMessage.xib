@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="473" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pz4-MK-NL2">
+                    <rect key="frame" x="16" y="8" width="441" height="67"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzR-LN-7Jj">
+                            <rect key="frame" x="373" y="3" width="60" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Gep-m6-qOK"/>
+                                <constraint firstAttribute="width" constant="60" id="vus-gM-tga"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Undo"/>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Reported" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLe-YY-WDq">
+                            <rect key="frame" x="8" y="12" width="357" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="K6z-E9-2Ia"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The message was deleted because you reported it" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggb-Kk-8s6">
+                            <rect key="frame" x="8" y="39" width="357" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    <constraints>
+                        <constraint firstItem="ggb-Kk-8s6" firstAttribute="leading" secondItem="Pz4-MK-NL2" secondAttribute="leading" constant="8" id="1pn-UL-2zR"/>
+                        <constraint firstItem="lzR-LN-7Jj" firstAttribute="leading" secondItem="eLe-YY-WDq" secondAttribute="trailing" constant="8" symbolic="YES" id="5XO-lv-k6r"/>
+                        <constraint firstItem="ggb-Kk-8s6" firstAttribute="top" secondItem="eLe-YY-WDq" secondAttribute="bottom" constant="6" id="JHK-eb-YF8"/>
+                        <constraint firstItem="eLe-YY-WDq" firstAttribute="top" secondItem="Pz4-MK-NL2" secondAttribute="top" constant="12" id="OLA-aO-BEh"/>
+                        <constraint firstAttribute="height" constant="67" id="OvZ-SE-r0S"/>
+                        <constraint firstItem="eLe-YY-WDq" firstAttribute="leading" secondItem="Pz4-MK-NL2" secondAttribute="leading" constant="8" id="Xzz-MS-oqg"/>
+                        <constraint firstAttribute="trailing" secondItem="ggb-Kk-8s6" secondAttribute="trailing" constant="76" id="kjB-Eo-bTy"/>
+                        <constraint firstItem="lzR-LN-7Jj" firstAttribute="top" secondItem="Pz4-MK-NL2" secondAttribute="top" constant="3" id="tnd-Xu-K8G"/>
+                        <constraint firstAttribute="trailing" secondItem="lzR-LN-7Jj" secondAttribute="trailing" constant="8" id="v5m-XH-FZI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Pz4-MK-NL2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="2ao-uW-Dq9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Pz4-MK-NL2" secondAttribute="trailing" constant="16" id="QO8-c5-2ej"/>
+                <constraint firstItem="Pz4-MK-NL2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="hBj-P1-vpK"/>
+                <constraint firstAttribute="bottom" secondItem="Pz4-MK-NL2" secondAttribute="bottom" constant="8" id="jnM-Ud-ALh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-264.49275362318843" y="-149.66517857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

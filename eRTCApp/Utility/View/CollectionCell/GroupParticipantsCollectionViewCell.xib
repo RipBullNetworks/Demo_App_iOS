@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GroupParticipantsCollectionViewCell" id="lhe-sY-Rzc" customClass="GroupParticipantsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="pvu-bQ-40I">
+                        <rect key="frame" x="21.5" y="16" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Im2-z7-W1f"/>
+                            <constraint firstAttribute="height" constant="60" id="Qw6-7w-xL1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYJ-Oe-P26">
+                        <rect key="frame" x="8" y="79" width="87" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df9-ql-tyn">
+                        <rect key="frame" x="61.5" y="-2" width="32" height="38"/>
+                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                        <state key="normal" image="icon_cross"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pvu-bQ-40I" firstAttribute="top" secondItem="Df9-ql-tyn" secondAttribute="bottom" constant="-20" id="Gfh-1b-1XS"/>
+                <constraint firstAttribute="trailing" secondItem="pYJ-Oe-P26" secondAttribute="trailing" constant="8" id="SaX-8c-jfy"/>
+                <constraint firstItem="pvu-bQ-40I" firstAttribute="top" secondItem="lhe-sY-Rzc" secondAttribute="top" constant="16" id="aNH-Xn-8v4"/>
+                <constraint firstItem="pYJ-Oe-P26" firstAttribute="top" secondItem="pvu-bQ-40I" secondAttribute="bottom" constant="3" id="e9X-PI-9Jd"/>
+                <constraint firstAttribute="bottom" secondItem="pYJ-Oe-P26" secondAttribute="bottom" constant="4" id="eyK-pP-nKs"/>
+                <constraint firstItem="Df9-ql-tyn" firstAttribute="leading" secondItem="pvu-bQ-40I" secondAttribute="trailing" constant="-20" id="gQy-jd-B3w"/>
+                <constraint firstItem="pvu-bQ-40I" firstAttribute="centerX" secondItem="lhe-sY-Rzc" secondAttribute="centerX" id="mlv-OB-FOv"/>
+                <constraint firstItem="pYJ-Oe-P26" firstAttribute="leading" secondItem="lhe-sY-Rzc" secondAttribute="leading" constant="8" id="onE-Ms-rCG"/>
+            </constraints>
+            <connections>
+                <outlet property="btnCross" destination="Df9-ql-tyn" id="Icg-Iy-1vT"/>
+                <outlet property="imgProfile" destination="pvu-bQ-40I" id="Ybx-Xa-PqP"/>
+                <outlet property="lblName" destination="pYJ-Oe-P26" id="exC-9G-9wM"/>
+            </connections>
+            <point key="canvasLocation" x="-54" y="101"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Avatar" width="40" height="40"/>
+        <image name="icon_cross" width="16" height="16"/>
+    </resources>
+</document>

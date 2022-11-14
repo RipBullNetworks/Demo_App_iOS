@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Medium.ttf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserContactsCell" rowHeight="59" id="hm8-81-ico" customClass="UserContactsCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hm8-81-ico" id="bc5-vK-V3a">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5yD-Og-s86">
+                        <rect key="frame" x="15" y="10" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="h3D-kV-dds"/>
+                            <constraint firstAttribute="height" constant="40" id="rkV-7S-xWn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dfsfsdfds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQE-qm-Yxb">
+                        <rect key="frame" x="70" y="8" width="262" height="22"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzA-E2-4ms">
+                        <rect key="frame" x="70" y="31.5" width="262" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Fem-NY-gXL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GW5-M4-pEM">
+                        <rect key="frame" x="15" y="60" width="360" height="1"/>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.88627450980392153" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8cy-J0-dSc"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mQf-5A-LEk">
+                        <rect key="frame" x="40" y="32" width="15" height="15"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="SbW-vc-hFj"/>
+                            <constraint firstAttribute="width" constant="15" id="opI-BH-iml"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userBlock" translatesAutoresizingMaskIntoConstraints="NO" id="9hH-jc-9NH">
+                        <rect key="frame" x="340" y="20.5" width="20" height="20"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="8wS-WG-Fgr"/>
+                            <constraint firstAttribute="height" constant="20" id="UJo-NJ-2Ul"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GW5-M4-pEM" firstAttribute="leading" secondItem="bc5-vK-V3a" secondAttribute="leading" constant="15" id="08n-MU-j8P"/>
+                    <constraint firstItem="5yD-Og-s86" firstAttribute="top" secondItem="bc5-vK-V3a" secondAttribute="top" constant="10" id="0NG-5o-3BU"/>
+                    <constraint firstItem="9hH-jc-9NH" firstAttribute="centerY" secondItem="bc5-vK-V3a" secondAttribute="centerY" id="0ip-GH-Nw5"/>
+                    <constraint firstItem="BzA-E2-4ms" firstAttribute="trailing" secondItem="VQE-qm-Yxb" secondAttribute="trailing" id="2jO-6b-dSH"/>
+                    <constraint firstItem="VQE-qm-Yxb" firstAttribute="leading" secondItem="5yD-Og-s86" secondAttribute="trailing" constant="15" id="3RW-pq-7kC"/>
+                    <constraint firstItem="mQf-5A-LEk" firstAttribute="leading" secondItem="5yD-Og-s86" secondAttribute="trailing" constant="-15" id="4iF-LK-kh6"/>
+                    <constraint firstItem="9hH-jc-9NH" firstAttribute="leading" secondItem="VQE-qm-Yxb" secondAttribute="trailing" constant="8" symbolic="YES" id="9Ll-6S-rtI"/>
+                    <constraint firstAttribute="trailing" secondItem="GW5-M4-pEM" secondAttribute="trailing" id="G8N-pW-A1Y"/>
+                    <constraint firstItem="VQE-qm-Yxb" firstAttribute="top" secondItem="bc5-vK-V3a" secondAttribute="top" constant="8" id="R1b-Rs-MnI"/>
+                    <constraint firstItem="BzA-E2-4ms" firstAttribute="leading" secondItem="5yD-Og-s86" secondAttribute="trailing" constant="15" id="Y54-Nu-aG1"/>
+                    <constraint firstItem="5yD-Og-s86" firstAttribute="leading" secondItem="bc5-vK-V3a" secondAttribute="leading" constant="15" id="cGR-Xz-rKH"/>
+                    <constraint firstItem="GW5-M4-pEM" firstAttribute="top" secondItem="5yD-Og-s86" secondAttribute="bottom" constant="10" id="m7u-zM-nxs"/>
+                    <constraint firstAttribute="bottom" secondItem="GW5-M4-pEM" secondAttribute="bottom" id="ol2-JQ-fZM"/>
+                    <constraint firstItem="BzA-E2-4ms" firstAttribute="top" secondItem="VQE-qm-Yxb" secondAttribute="bottom" constant="1.5" id="s3V-Uu-vA4"/>
+                    <constraint firstAttribute="trailing" secondItem="9hH-jc-9NH" secondAttribute="trailing" constant="15" id="v8G-Cd-TXG"/>
+                    <constraint firstItem="GW5-M4-pEM" firstAttribute="top" secondItem="mQf-5A-LEk" secondAttribute="bottom" constant="13" id="yJQ-3N-kpg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="ZAV-ea-0OT"/>
+            <inset key="separatorInset" minX="75" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="imageBlock" destination="9hH-jc-9NH" id="xjJ-Ck-Q8V"/>
+                <outlet property="imgUser" destination="5yD-Og-s86" id="z07-C8-hUC"/>
+                <outlet property="imgUserAwailability" destination="mQf-5A-LEk" id="zzR-Ku-EwJ"/>
+                <outlet property="imgWidth" destination="h3D-kV-dds" id="83l-JD-y09"/>
+                <outlet property="imgheight" destination="rkV-7S-xWn" id="Gym-9J-Ymb"/>
+                <outlet property="lblUserEmailId" destination="BzA-E2-4ms" id="KRC-XN-hih"/>
+                <outlet property="lblUserName" destination="VQE-qm-Yxb" id="tcr-Bn-Vtr"/>
+            </connections>
+            <point key="canvasLocation" x="-7.2000000000000002" y="8.5457271364317844"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="userBlock" width="18" height="18"/>
+    </resources>
+</document>

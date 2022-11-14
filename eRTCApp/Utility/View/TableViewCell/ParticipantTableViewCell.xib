@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ParticipantTableViewCell" rowHeight="56" id="Fxo-n4-IcO" customClass="ParticipantTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fxo-n4-IcO" id="YAe-pg-qk9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kvR-VJ-jJS">
+                        <rect key="frame" x="14" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="09U-EE-PdF"/>
+                            <constraint firstAttribute="height" constant="40" id="Xlh-EQ-4aA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60b-Qy-DY2">
+                        <rect key="frame" x="70" y="8" width="233" height="40"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDM-E3-tZK">
+                        <rect key="frame" x="311" y="8" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6fS-qr-OzW"/>
+                        </constraints>
+                        <state key="normal" image="radioUncheck"/>
+                        <state key="selected" image="icon_selected"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kvR-VJ-jJS" firstAttribute="top" secondItem="YAe-pg-qk9" secondAttribute="top" constant="8" id="2vN-T2-ils"/>
+                    <constraint firstAttribute="trailing" secondItem="pDM-E3-tZK" secondAttribute="trailing" constant="24" id="5KG-be-sNI"/>
+                    <constraint firstItem="pDM-E3-tZK" firstAttribute="leading" secondItem="60b-Qy-DY2" secondAttribute="trailing" constant="8" id="9Hn-Hl-xkQ"/>
+                    <constraint firstItem="pDM-E3-tZK" firstAttribute="bottom" secondItem="60b-Qy-DY2" secondAttribute="bottom" id="F2N-ey-WqM"/>
+                    <constraint firstItem="60b-Qy-DY2" firstAttribute="top" secondItem="kvR-VJ-jJS" secondAttribute="top" id="I23-7W-3K4"/>
+                    <constraint firstItem="60b-Qy-DY2" firstAttribute="bottom" secondItem="kvR-VJ-jJS" secondAttribute="bottom" id="VeW-zA-cAL"/>
+                    <constraint firstItem="kvR-VJ-jJS" firstAttribute="leading" secondItem="YAe-pg-qk9" secondAttribute="leading" constant="14" id="b1f-Sv-F9B"/>
+                    <constraint firstAttribute="bottom" secondItem="kvR-VJ-jJS" secondAttribute="bottom" constant="7.5" id="fWw-Cx-7Y2"/>
+                    <constraint firstItem="pDM-E3-tZK" firstAttribute="top" secondItem="60b-Qy-DY2" secondAttribute="top" id="kfN-Kn-YMC"/>
+                    <constraint firstItem="60b-Qy-DY2" firstAttribute="leading" secondItem="kvR-VJ-jJS" secondAttribute="trailing" constant="16" id="kwW-8s-uaY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnSelected" destination="pDM-E3-tZK" id="dvM-H8-V7S"/>
+                <outlet property="imgProfile" destination="kvR-VJ-jJS" id="GE1-BT-Z1E"/>
+                <outlet property="lblName" destination="60b-Qy-DY2" id="g5Y-By-QD4"/>
+            </connections>
+            <point key="canvasLocation" x="-6" y="4"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_selected" width="16" height="16"/>
+        <image name="radioUncheck" width="20" height="20"/>
+    </resources>
+</document>

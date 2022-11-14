@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SFProDisplay-Semibold.ttf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmptyCollectionCell" id="gTV-IL-0wX" customClass="EmptyCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="287"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="435" height="287"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nk5-dR-MqA">
+                        <rect key="frame" x="5" y="5" width="425" height="277"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHx-9F-QNI">
+                                <rect key="frame" x="87.5" y="68" width="250" height="141"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmptyData" translatesAutoresizingMaskIntoConstraints="NO" id="uUf-rn-HEP">
+                                        <rect key="frame" x="97.5" y="8" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="Bfd-te-as5"/>
+                                            <constraint firstAttribute="height" constant="55" id="cie-1a-069"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgW-GT-e0t">
+                                        <rect key="frame" x="8" y="75" width="234" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="CAZ-LV-GeA"/>
+                                        </constraints>
+                                        <string key="text">It looks like there are no results.
+</string>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try another keywords." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nit-Qn-jBh">
+                                        <rect key="frame" x="8" y="102" width="234" height="18"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                        <color key="textColor" red="0.58027035000000005" green="0.64472121000000004" blue="0.70945167539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CgW-GT-e0t" secondAttribute="trailing" constant="8" id="8U6-iW-rOV"/>
+                                    <constraint firstAttribute="height" constant="141" id="FPQ-kW-1GT"/>
+                                    <constraint firstItem="uUf-rn-HEP" firstAttribute="top" secondItem="wHx-9F-QNI" secondAttribute="top" constant="8" id="HZL-MA-PH8"/>
+                                    <constraint firstItem="CgW-GT-e0t" firstAttribute="top" secondItem="uUf-rn-HEP" secondAttribute="bottom" constant="12" id="UJh-oI-tvw"/>
+                                    <constraint firstItem="uUf-rn-HEP" firstAttribute="centerX" secondItem="wHx-9F-QNI" secondAttribute="centerX" id="esb-vh-FMG"/>
+                                    <constraint firstItem="Nit-Qn-jBh" firstAttribute="top" secondItem="CgW-GT-e0t" secondAttribute="bottom" constant="6" id="hkT-MI-baT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nit-Qn-jBh" secondAttribute="trailing" constant="8" id="mRK-i5-uBq"/>
+                                    <constraint firstAttribute="width" constant="250" id="n1h-ap-wsF"/>
+                                    <constraint firstItem="Nit-Qn-jBh" firstAttribute="leading" secondItem="wHx-9F-QNI" secondAttribute="leading" constant="8" id="usA-Z8-o4y"/>
+                                    <constraint firstItem="CgW-GT-e0t" firstAttribute="leading" secondItem="wHx-9F-QNI" secondAttribute="leading" constant="8" id="wke-MF-1HO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97305160759999998" green="0.97658973930000004" blue="0.98001819850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wHx-9F-QNI" firstAttribute="centerX" secondItem="nk5-dR-MqA" secondAttribute="centerX" id="kU8-fd-UD2"/>
+                            <constraint firstItem="wHx-9F-QNI" firstAttribute="centerY" secondItem="nk5-dR-MqA" secondAttribute="centerY" id="leR-FT-or2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nk5-dR-MqA" secondAttribute="trailing" constant="5" id="9XH-wx-GuN"/>
+                <constraint firstItem="nk5-dR-MqA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="h5o-QS-r7X"/>
+                <constraint firstItem="nk5-dR-MqA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="olZ-tR-0jI"/>
+                <constraint firstAttribute="bottom" secondItem="nk5-dR-MqA" secondAttribute="bottom" constant="5" id="xGA-UH-hhX"/>
+            </constraints>
+            <size key="customSize" width="435" height="287"/>
+            <connections>
+                <outlet property="containerView" destination="nk5-dR-MqA" id="3dC-TH-ara"/>
+            </connections>
+            <point key="canvasLocation" x="184.78260869565219" y="165.73660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="EmptyData" width="52.5" height="53"/>
+    </resources>
+</document>

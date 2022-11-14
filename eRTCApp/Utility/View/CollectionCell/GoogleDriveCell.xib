@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SFProDisplay-Semibold.ttf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GoogleDriveCell" id="gTV-IL-0wX" customClass="GoogleDriveCell">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="243"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="243"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P23-VP-W4i">
+                        <rect key="frame" x="5" y="5" width="381" height="233"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQ3-8G-6em">
+                                <rect key="frame" x="0.0" y="0.0" width="381" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="driveIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5dh-dQ-jyb">
+                                        <rect key="frame" x="16" y="7.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="smN-7J-CCF"/>
+                                            <constraint firstAttribute="height" constant="35" id="yQs-x7-LKc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Drive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6V-W6-y45">
+                                        <rect key="frame" x="59" y="14.5" width="306" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="gIq-uT-Lt7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97305160759999998" green="0.97658973930000004" blue="0.98001819850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8hB-1N-sUx"/>
+                                    <constraint firstItem="5dh-dQ-jyb" firstAttribute="leading" secondItem="gQ3-8G-6em" secondAttribute="leading" constant="16" id="9vO-yv-fMc"/>
+                                    <constraint firstAttribute="trailing" secondItem="J6V-W6-y45" secondAttribute="trailing" constant="16" id="ALY-9H-qpA"/>
+                                    <constraint firstItem="J6V-W6-y45" firstAttribute="centerY" secondItem="5dh-dQ-jyb" secondAttribute="centerY" id="OTT-fD-0Ji"/>
+                                    <constraint firstItem="5dh-dQ-jyb" firstAttribute="centerY" secondItem="gQ3-8G-6em" secondAttribute="centerY" id="PTz-9S-tYh"/>
+                                    <constraint firstItem="J6V-W6-y45" firstAttribute="leading" secondItem="5dh-dQ-jyb" secondAttribute="trailing" constant="8" symbolic="YES" id="kuo-Qw-AbY"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="driveFile" translatesAutoresizingMaskIntoConstraints="NO" id="Int-Sa-bxC">
+                                <rect key="frame" x="16" y="62" width="40" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="LlI-3g-rTX"/>
+                                    <constraint firstAttribute="width" constant="40" id="Q5C-kb-2CR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtS-OW-nux">
+                                <rect key="frame" x="64" y="66" width="309" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7uW-da-TXO"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Attachments of ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666668057441711" green="0.26666668057441711" blue="0.26666668057441711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Design">
+                                        <attributes>
+                                            <color key="NSColor" red="0.24739590289999999" green="0.51542216539999997" blue="0.98614102599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Task">
+                                        <attributes>
+                                            <color key="NSColor" red="0.26666668057441711" green="0.26666668057441711" blue="0.26666668057441711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owned by you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDM-TA-lmu">
+                                <rect key="frame" x="64" y="95" width="309" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GTF-rB-cpb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.58027035000000005" green="0.64472121000000004" blue="0.70945167539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="updateWatch" translatesAutoresizingMaskIntoConstraints="NO" id="wY4-0f-DjY">
+                                <rect key="frame" x="16" y="127" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="0ca-ZM-lts"/>
+                                    <constraint firstAttribute="width" constant="18" id="V61-NK-BLm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last updated 11/9/2020 at 4:50pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg8-ni-ZTj">
+                                <rect key="frame" x="42" y="125.5" width="331" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dOE-lR-Zw6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.58027035000000005" green="0.64472121000000004" blue="0.70945167539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMN-8a-jEV">
+                                <rect key="frame" x="16" y="167" width="349" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fc3-pL-GXD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
+                                <state key="normal" title="Open">
+                                    <color key="titleColor" red="0.075349010529999996" green="0.14331212639999999" blue="0.23049989339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOpen:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dtw-xf-ng0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AtS-OW-nux" firstAttribute="leading" secondItem="Int-Sa-bxC" secondAttribute="trailing" constant="8" symbolic="YES" id="3bX-Sd-tCO"/>
+                            <constraint firstAttribute="trailing" secondItem="gQ3-8G-6em" secondAttribute="trailing" id="Aoj-6e-Npb"/>
+                            <constraint firstAttribute="bottom" secondItem="eMN-8a-jEV" secondAttribute="bottom" constant="16" id="EGf-Is-o5y"/>
+                            <constraint firstItem="wY4-0f-DjY" firstAttribute="top" secondItem="Int-Sa-bxC" secondAttribute="bottom" constant="10" id="Hx4-0r-h1l"/>
+                            <constraint firstItem="YDM-TA-lmu" firstAttribute="top" secondItem="AtS-OW-nux" secondAttribute="bottom" constant="8" symbolic="YES" id="JQr-eg-KiI"/>
+                            <constraint firstItem="gQ3-8G-6em" firstAttribute="top" secondItem="P23-VP-W4i" secondAttribute="top" id="JRa-2E-BZD"/>
+                            <constraint firstAttribute="trailing" secondItem="Bg8-ni-ZTj" secondAttribute="trailing" constant="8" id="NVo-jA-FPe"/>
+                            <constraint firstItem="YDM-TA-lmu" firstAttribute="leading" secondItem="Int-Sa-bxC" secondAttribute="trailing" constant="8" symbolic="YES" id="SLm-68-5fW"/>
+                            <constraint firstItem="Bg8-ni-ZTj" firstAttribute="centerY" secondItem="wY4-0f-DjY" secondAttribute="centerY" id="Tdn-kH-QP5"/>
+                            <constraint firstItem="Int-Sa-bxC" firstAttribute="leading" secondItem="P23-VP-W4i" secondAttribute="leading" constant="16" id="XMM-yU-Fuo"/>
+                            <constraint firstItem="Int-Sa-bxC" firstAttribute="top" secondItem="gQ3-8G-6em" secondAttribute="bottom" constant="12" id="XYv-bG-AcT"/>
+                            <constraint firstAttribute="trailing" secondItem="YDM-TA-lmu" secondAttribute="trailing" constant="8" id="a0K-Qg-8gn"/>
+                            <constraint firstAttribute="trailing" secondItem="eMN-8a-jEV" secondAttribute="trailing" constant="16" id="fQB-hB-I1o"/>
+                            <constraint firstItem="AtS-OW-nux" firstAttribute="top" secondItem="gQ3-8G-6em" secondAttribute="bottom" constant="16" id="gv1-9R-LJx"/>
+                            <constraint firstItem="wY4-0f-DjY" firstAttribute="leading" secondItem="P23-VP-W4i" secondAttribute="leading" constant="16" id="rb4-7T-rZ5"/>
+                            <constraint firstItem="Bg8-ni-ZTj" firstAttribute="leading" secondItem="wY4-0f-DjY" secondAttribute="trailing" constant="8" symbolic="YES" id="sa5-Nk-vMN"/>
+                            <constraint firstItem="gQ3-8G-6em" firstAttribute="leading" secondItem="P23-VP-W4i" secondAttribute="leading" id="slK-F6-Ylh"/>
+                            <constraint firstAttribute="trailing" secondItem="AtS-OW-nux" secondAttribute="trailing" constant="8" id="v9G-EF-mkC"/>
+                            <constraint firstItem="eMN-8a-jEV" firstAttribute="leading" secondItem="P23-VP-W4i" secondAttribute="leading" constant="16" id="xd3-yB-MhE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="8"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="P23-VP-W4i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="O8V-3S-2bO"/>
+                <constraint firstAttribute="bottom" secondItem="P23-VP-W4i" secondAttribute="bottom" constant="5" id="Sx7-fr-SnM"/>
+                <constraint firstItem="P23-VP-W4i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="nAd-bh-mN4"/>
+                <constraint firstAttribute="trailing" secondItem="P23-VP-W4i" secondAttribute="trailing" constant="5" id="pU3-8T-k9J"/>
+            </constraints>
+            <size key="customSize" width="391" height="243"/>
+            <connections>
+                <outlet property="btnOpen" destination="eMN-8a-jEV" id="Hlf-P0-p1q"/>
+                <outlet property="containerView" destination="P23-VP-W4i" id="nFO-PW-uRi"/>
+                <outlet property="lastUpdate" destination="Bg8-ni-ZTj" id="xG1-iw-e4G"/>
+                <outlet property="lblAttachment" destination="AtS-OW-nux" id="rfG-sO-Y7x"/>
+                <outlet property="lblOwnedBy" destination="YDM-TA-lmu" id="lm4-jQ-Gbe"/>
+            </connections>
+            <point key="canvasLocation" x="-168.84057971014494" y="149.66517857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="driveFile" width="40.5" height="54"/>
+        <image name="driveIcon" width="33" height="33"/>
+        <image name="updateWatch" width="15" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageVideoCell" id="gTV-IL-0wX" customClass="ImageVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3di-8e-xx9">
+                        <rect key="frame" x="5" y="5" width="103" height="94"/>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7w1-xc-W5A">
+                        <rect key="frame" x="46.5" y="42" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </activityIndicatorView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audioRecord" translatesAutoresizingMaskIntoConstraints="NO" id="gmh-XU-MiP">
+                        <rect key="frame" x="12" y="77" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="O6z-2k-bvx"/>
+                            <constraint firstAttribute="height" constant="15" id="RtT-hy-hmB"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3di-8e-xx9" secondAttribute="trailing" constant="5" id="BLl-R7-U9R"/>
+                <constraint firstAttribute="bottom" secondItem="gmh-XU-MiP" secondAttribute="bottom" constant="12" id="P1p-iY-SqD"/>
+                <constraint firstItem="7w1-xc-W5A" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="agQ-K0-dlM"/>
+                <constraint firstItem="gmh-XU-MiP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="crk-kb-9Xn"/>
+                <constraint firstAttribute="bottom" secondItem="3di-8e-xx9" secondAttribute="bottom" constant="5" id="dcv-oJ-SBd"/>
+                <constraint firstItem="7w1-xc-W5A" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="qGT-bG-fuK"/>
+                <constraint firstItem="3di-8e-xx9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="rPc-m7-0pl"/>
+                <constraint firstItem="3di-8e-xx9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="uYF-dB-h2e"/>
+            </constraints>
+            <size key="customSize" width="113" height="104"/>
+            <connections>
+                <outlet property="activityIndicator" destination="7w1-xc-W5A" id="lwC-kK-A0p"/>
+                <outlet property="imgMediaType" destination="gmh-XU-MiP" id="Xmb-JP-pKi"/>
+                <outlet property="imgUser" destination="3di-8e-xx9" id="GUr-cr-ieN"/>
+            </connections>
+            <point key="canvasLocation" x="183.33333333333334" y="87.723214285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="audioRecord" width="16" height="16"/>
+    </resources>
+</document>

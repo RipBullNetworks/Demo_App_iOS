@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Medium.ttf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="RecentSearchCell">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recentSearch" translatesAutoresizingMaskIntoConstraints="NO" id="ZHq-ql-bcY">
+                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="O7S-nD-hWE"/>
+                            <constraint firstAttribute="height" constant="20" id="uNV-Bw-wNx"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnd-JJ-wtS">
+                        <rect key="frame" x="372" y="12" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="hyE-TQ-Pzg"/>
+                            <constraint firstAttribute="width" constant="25" id="vmg-EM-QB4"/>
+                        </constraints>
+                        <state key="normal" image="recentCross"/>
+                        <connections>
+                            <action selector="btnRecentSearch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bYc-EN-qOC"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awE-4g-TVr">
+                        <rect key="frame" x="43" y="14.5" width="221" height="21"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0y-Ad-6Y3">
+                        <rect key="frame" x="274" y="14" width="90" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="IOA-ok-30n"/>
+                            <constraint firstAttribute="height" constant="21" id="PPA-7w-OcT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="10"/>
+                        <color key="textColor" red="0.44433239099999999" green="0.52412235740000002" blue="0.61155086759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPE-jK-vrQ">
+                        <rect key="frame" x="15" y="48" width="402" height="1"/>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.88627450980392153" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="V8r-Zp-9Xf"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdt-m9-Wro">
+                        <rect key="frame" x="0.0" y="51" width="417" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="5Qh-jM-4DA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                        <state key="normal" title="CLEAR SEARCH HISTORY"/>
+                        <connections>
+                            <action selector="btnSearchHistory:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CnU-Cv-ChT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mPE-jK-vrQ" firstAttribute="top" secondItem="awE-4g-TVr" secondAttribute="bottom" constant="12.5" id="0lg-q7-IGB"/>
+                    <constraint firstItem="vnd-JJ-wtS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="1Eh-xt-c5c"/>
+                    <constraint firstItem="awE-4g-TVr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14.5" id="7Pm-8J-Ph1"/>
+                    <constraint firstItem="Gdt-m9-Wro" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9Ev-NO-i5h"/>
+                    <constraint firstAttribute="trailing" secondItem="mPE-jK-vrQ" secondAttribute="trailing" id="9XD-rY-cTX"/>
+                    <constraint firstItem="Z0y-Ad-6Y3" firstAttribute="leading" secondItem="awE-4g-TVr" secondAttribute="trailing" constant="10" id="O4S-3B-Rzy"/>
+                    <constraint firstAttribute="trailing" secondItem="Gdt-m9-Wro" secondAttribute="trailing" id="Q27-47-zke"/>
+                    <constraint firstItem="awE-4g-TVr" firstAttribute="leading" secondItem="ZHq-ql-bcY" secondAttribute="trailing" constant="8" symbolic="YES" id="cwx-oy-c5Q"/>
+                    <constraint firstItem="mPE-jK-vrQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="fUQ-r8-iSt"/>
+                    <constraint firstItem="vnd-JJ-wtS" firstAttribute="leading" secondItem="Z0y-Ad-6Y3" secondAttribute="trailing" constant="8" symbolic="YES" id="fau-Dn-pdi"/>
+                    <constraint firstItem="Z0y-Ad-6Y3" firstAttribute="centerY" secondItem="vnd-JJ-wtS" secondAttribute="centerY" id="ogU-G6-ONh"/>
+                    <constraint firstItem="ZHq-ql-bcY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="p60-1W-Z5U"/>
+                    <constraint firstItem="Gdt-m9-Wro" firstAttribute="top" secondItem="mPE-jK-vrQ" secondAttribute="bottom" constant="2" id="pSY-Xd-5fu"/>
+                    <constraint firstAttribute="bottom" secondItem="Gdt-m9-Wro" secondAttribute="bottom" constant="2" id="q7D-J8-gVl"/>
+                    <constraint firstAttribute="trailing" secondItem="vnd-JJ-wtS" secondAttribute="trailing" constant="20" symbolic="YES" id="qqM-ES-odE"/>
+                    <constraint firstItem="ZHq-ql-bcY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="zg9-dB-b8W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btnCross" destination="vnd-JJ-wtS" id="9KE-4S-2tQ"/>
+                <outlet property="constantBtnSearchHistory" destination="5Qh-jM-4DA" id="xzL-xg-WA3"/>
+                <outlet property="lblCurrentDate" destination="Z0y-Ad-6Y3" id="doJ-JE-fIw"/>
+                <outlet property="lblMessages" destination="awE-4g-TVr" id="d89-el-WFB"/>
+            </connections>
+            <point key="canvasLocation" x="155.79710144927537" y="30.803571428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="recentCross" width="12" height="12"/>
+        <image name="recentSearch" width="20" height="20"/>
+    </resources>
+</document>

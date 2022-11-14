@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Chat Restoration View Controller-->
+        <scene sceneID="oNn-v9-RjJ">
+            <objects>
+                <viewController storyboardIdentifier="ChatRestorationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OYl-pm-tXd" customClass="ChatRestorationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AVY-iz-aR2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="GED-mf-Cwa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="306"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pbH-xd-Yid">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="4"/>
+                                    </progressView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfa-0O-Jhz">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="153"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RdM-ct-z1k">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="153"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hEf-ss-MFM">
+                                                        <rect key="frame" x="12" y="18" width="390" height="117"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMr-av-EXE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="48"/>
+                                                                <state key="normal" image="Clock"/>
+                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="E2X-tN-ozx">
+                                                                <rect key="frame" x="55" y="0.0" width="335" height="92.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Backup Messages Found" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5m-gg-fnv">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="19.5"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="16"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn8-K1-Cnf">
+                                                                        <rect key="frame" x="0.0" y="20.5" width="335" height="72"/>
+                                                                        <attributedString key="attributedText">
+                                                                            <fragment>
+                                                                                <string key="content">Restore your message history from backup.
+By choosing not to restore, you will not be able to access these messages later.</string>
+                                                                                <attributes>
+                                                                                    <color key="NSColor" systemColor="secondaryLabelColor"/>
+                                                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="24" tighteningFactorForTruncation="0.0"/>
+                                                                                </attributes>
+                                                                            </fragment>
+                                                                        </attributedString>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="18" left="12" bottom="18" right="12"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="RdM-ct-z1k" firstAttribute="leading" secondItem="tfa-0O-Jhz" secondAttribute="leading" id="1ty-2P-hp4"/>
+                                            <constraint firstAttribute="trailing" secondItem="RdM-ct-z1k" secondAttribute="trailing" id="CZ5-4J-q5f"/>
+                                            <constraint firstItem="RdM-ct-z1k" firstAttribute="top" secondItem="tfa-0O-Jhz" secondAttribute="top" id="OSH-Jq-jzb"/>
+                                            <constraint firstAttribute="height" constant="153" id="SjJ-r1-1i3"/>
+                                            <constraint firstAttribute="bottom" secondItem="RdM-ct-z1k" secondAttribute="bottom" id="YWL-6X-5kY"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8z2-LO-UUj">
+                                        <rect key="frame" x="0.0" y="237" width="414" height="69"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r2r-K8-PI7">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-i4-nRa">
+                                                        <rect key="frame" x="18" y="8" width="378" height="53"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ils-2G-RYN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="53"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Restoration is in progress..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg1-Y3-nMQ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="365" height="53"/>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="tW6-U8-gGY">
+                                                                        <rect key="frame" x="365" y="0.0" width="13" height="53"/>
+                                                                    </activityIndicatorView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="18" bottom="8" right="18"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="r2r-K8-PI7" firstAttribute="top" secondItem="8z2-LO-UUj" secondAttribute="top" id="A6x-dd-Zs1"/>
+                                            <constraint firstItem="r2r-K8-PI7" firstAttribute="leading" secondItem="8z2-LO-UUj" secondAttribute="leading" id="Heu-c2-y7H"/>
+                                            <constraint firstAttribute="height" constant="69" id="Ury-hR-NUD"/>
+                                            <constraint firstAttribute="bottom" secondItem="r2r-K8-PI7" secondAttribute="bottom" id="Wsj-3S-1cE"/>
+                                            <constraint firstAttribute="trailing" secondItem="r2r-K8-PI7" secondAttribute="trailing" id="dJ7-a7-Qrr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tfa-0O-Jhz" firstAttribute="leading" secondItem="GED-mf-Cwa" secondAttribute="leading" id="ApV-G1-SNh"/>
+                                    <constraint firstItem="8z2-LO-UUj" firstAttribute="leading" secondItem="GED-mf-Cwa" secondAttribute="leading" id="CtX-uZ-B52"/>
+                                    <constraint firstAttribute="trailing" secondItem="tfa-0O-Jhz" secondAttribute="trailing" id="Ria-98-HYF"/>
+                                    <constraint firstAttribute="trailing" secondItem="8z2-LO-UUj" secondAttribute="trailing" id="hjc-b2-jaX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZGn-YY-yA9"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="GED-mf-Cwa" firstAttribute="trailing" secondItem="ZGn-YY-yA9" secondAttribute="trailing" id="2OH-zV-5Xw"/>
+                            <constraint firstItem="GED-mf-Cwa" firstAttribute="top" secondItem="ZGn-YY-yA9" secondAttribute="top" id="jlG-Sj-NwW"/>
+                            <constraint firstItem="GED-mf-Cwa" firstAttribute="leading" secondItem="ZGn-YY-yA9" secondAttribute="leading" id="lKS-hi-izC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hdd-os-cun"/>
+                    <connections>
+                        <outlet property="progressActivityIndicator" destination="tW6-U8-gGY" id="rU3-M7-reC"/>
+                        <outlet property="progressTitleLabel" destination="bg1-Y3-nMQ" id="6Ct-od-Ff2"/>
+                        <outlet property="progressViewContainer" destination="8z2-LO-UUj" id="HfJ-cn-lMQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhb-yv-eKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672" y="177"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Clock" width="48" height="48"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,31 @@
+//
+//  eRTCApp-Prefix.pch
+//  eRTCApp
+//
+//  Created by rakesh  palotra on 01/01/19.
+//  Copyright © 2019 Ripbull Network. All rights reserved.
+//
+
+#ifndef eRTCApp_Prefix_pch
+#define eRTCApp_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <eRTC/eRTCSDK.h>
+#import <eRTC/eRTCCoreDataManager.h>
+#import <eRTC/eRTCUserAuthentication.h>
+#import <eRTC/eRTCAppUsers.h>
+#import <eRTC/eRTCChatManager.h>
+#import "AppDelegate.h"
+#import "Helper.h"
+#import "UserModel.h"
+#import "Constants.h"
+#import "LogineRTCBaseViewController.h"
+#import <KVNProgress/KVNProgress.h>
+#import <SDWebImage/SDWebImage.h>
+#import <eRTC/LogFile.h>
+#import <eRTC/eRTCHelper.h>
+//#import "IQKeyboardManager.h"
+
+#endif /* eRTCApp_Prefix_pch */

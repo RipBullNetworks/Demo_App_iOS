@@ -1,0 +1,12 @@
+//
+//  DEV.xcconfig
+//  eRTCApp
+//
+//  Created by Logan on 06/10/2022.
+//  Copyright © 2022 Ripbull Network. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV
